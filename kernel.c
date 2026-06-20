@@ -1,4 +1,4 @@
-#define VGA_BUFFER ((char*)0xB8000)
+#define VGA_BUFFER ((volatile unsigned char*)0xB8000)
 
 void yazdir(char *text, int x_ekseni, int y_ekseni) {
    int index = y_ekseni * 80 + x_ekseni; // 80x25 ekran için 
